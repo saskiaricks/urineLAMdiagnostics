@@ -137,7 +137,7 @@ agg.HIVinp = sparse(tmp);
 
 
 tmp = zeros(i.nstates);
-tmp(inds,[s.hlow]) = 1;                               % Inpatient ART initiation from hlow (ignoring those from ART_n_low as notification data won't recount those)
+tmp(inds,[s.hlow]) = 1;                               % Inpatient ART initiation from hlow 
 sel.HIVinp_low = tmp - diag(diag(tmp));
 
 tmp = zeros(i.nstates);
